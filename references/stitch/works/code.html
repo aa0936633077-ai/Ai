@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-TW"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#131411", "on-tertiary-container": "#e24605", "surface-container-high": "#2a2a27", "surface-tint": "#d2c4bd", "error-container": "#93000a", "surface-container": "#20201d", "on-background": "#e5e2dd", "surface": "#131411", "outline-variant": "#4e4540", "on-error-container": "#ffdad6", "on-error": "#690005", "on-secondary-fixed-variant": "#6d3a00", "secondary": "#ffb77a", "surface-dim": "#131411", "on-tertiary-fixed": "#3a0b00", "on-primary-fixed-variant": "#4f4540", "inverse-primary": "#675c57", "secondary-fixed": "#ffdcc2", "tertiary-container": "#2a0600", "on-secondary-container": "#fcae6a", "inverse-surface": "#e5e2dd", "on-tertiary-fixed-variant": "#852400", "on-secondary": "#4c2700", "outline": "#9a8e89", "secondary-container": "#774001", "secondary-fixed-dim": "#ffb77a", "inverse-on-surface": "#31302d", "surface-container-low": "#1c1c19", "primary-fixed-dim": "#d2c4bd", "tertiary": "#ffb59e", "surface-container-highest": "#353532", "surface-container-lowest": "#0e0e0c", "tertiary-fixed-dim": "#ffb59e", "surface-variant": "#353532", "on-surface": "#e5e2dd", "tertiary-fixed": "#ffdbd0", "on-surface-variant": "#d1c4be", "on-primary-fixed": "#221a16", "on-primary": "#372f2a", "primary": "#d2c4bd", "on-secondary-fixed": "#2e1500", "primary-fixed": "#efdfd8", "error": "#ffb4ab", "surface-bright": "#3a3936", "on-tertiary": "#5e1700", "primary-container": "#18110d", "on-primary-container": "#877b75" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "margin": "2.5rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-2xl": "4rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-3xl": "6rem" }, "fontFamily": { "label-caps": ["Hanken Grotesk"], "body-lg": ["Hanken Grotesk"], "headline-sm": ["Bodoni Moda"], "headline-lg": ["Bodoni Moda"], "title-md": ["Hanken Grotesk"], "headline-md": ["Bodoni Moda"], "title-lg": ["Hanken Grotesk"], "label-code": ["Hanken Grotesk"], "body-md": ["Hanken Grotesk"], "display-hero": ["Bodoni Moda"], "headline-lg-mobile": ["Bodoni Moda"], "display-hero-mobile": ["Bodoni Moda"], "body-sm": ["Hanken Grotesk"] }, "fontSize": { "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.15em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" }], "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-hero": ["84px", { "lineHeight": "88px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-lg-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-hero-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131411;color:#e5e2dd;}body{overscroll-behavior:none;font-family:'Hanken Grotesk',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-secondary selection:text-on-secondary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="5-in-1 Espresso Monogram" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCJVO2mDHTI695XQnoA6d8XcwUq1NmA4m5aN_zDSk05elYbVue8mqBspxEjFBYpq4jVrQ-9s3Q5eAGnIS0NUnJnEsebu1ZDiSYaYCHy151nidf3iavb6gDB3T4oOY7hz8-xgL_BvwK47dPK79mVySC9hjCsWgVJ98pwrcJD_5ZXAjuIAURaSsk30DW0cCQ62ifm7Uc1QdurhnGyEa9dgEIhLe1hAY1zkg9v7Wzq9XwzHg"/><div class="flex flex-col"><span class="font-label-caps text-label-caps uppercase text-on-surface tracking-widest leading-none">WILD ESPRESSO</span><span class="font-label-code text-label-code text-secondary tracking-wider leading-none mt-space-xs">雲林野小孩</span></div></div><div class="flex items-center gap-space-xs"><a class="h-11 px-space-md flex items-center justify-center font-label-caps text-label-caps uppercase bg-primary text-on-primary transition-colors hover:bg-secondary hover:text-on-secondary" data-path="contact" href="#">聯絡</a><button aria-label="開啟選單" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-secondary"><span class="material-symbols-outlined text-[22px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- Editorial Top Banner & Subtitle -->
+<section class="px-margin-mobile pt-space-md pb-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-code text-label-code uppercase tracking-widest text-secondary">ARCHIVE // 2023-2025</span>
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 bg-secondary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Index Vol.04</span>
+</div>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile tracking-tight text-on-surface uppercase">
+      Selected Works
+    </h1>
+<p class="font-label-code text-label-code text-secondary tracking-wider mt-1">
+      精選作品集
+    </p>
+<!-- Genre Tags List -->
+<div class="mt-space-md p-space-sm bg-surface-container flex flex-wrap items-center gap-y-1 gap-x-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">2D 平面繪畫</span>
+<span class="text-outline-variant font-label-code text-label-code">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">視覺設計</span>
+<span class="text-outline-variant font-label-code text-label-code">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">攝影調色</span>
+<span class="text-outline-variant font-label-code text-label-code">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">影像剪輯</span>
+</div>
+</section>
+<!-- Horizontal Filter Reel -->
+<div class="w-full overflow-x-auto py-space-sm px-margin-mobile no-scrollbar flex items-center gap-space-xs" id="filter-bar">
+<button class="filter-btn h-10 px-space-md bg-secondary text-on-secondary font-label-caps text-label-caps uppercase whitespace-nowrap transition-transform active:scale-95 shadow-sm" data-filter="all">
+      全部 All (28)
+    </button>
+<button class="filter-btn h-10 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps uppercase whitespace-nowrap transition-colors active:scale-95" data-filter="illustration">
+      🎨 2D插畫 Illustration
+    </button>
+<button class="filter-btn h-10 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps uppercase whitespace-nowrap transition-colors active:scale-95" data-filter="design">
+      📐 視覺設計 Design
+    </button>
+<button class="filter-btn h-10 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps uppercase whitespace-nowrap transition-colors active:scale-95" data-filter="photography">
+      📷 攝影寫真 Photography
+    </button>
+<button class="filter-btn h-10 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps uppercase whitespace-nowrap transition-colors active:scale-95" data-filter="video">
+      🎬 動態剪輯 Video
+    </button>
+<button class="filter-btn h-10 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps uppercase whitespace-nowrap transition-colors active:scale-95" data-filter="audio">
+      🎵 音樂製作 Audio
+    </button>
+</div>
+<!-- Editorial Specimen Stream (Mobile Grid & Cards) -->
+<div class="px-margin-mobile flex flex-col gap-space-lg mt-space-md" id="projects-container">
+<!-- Card 1: 濁水溪的霓虹怪獸 (Illustration) -->
+<article class="project-card flex flex-col bg-surface-container overflow-hidden group shadow-md" data-category="illustration">
+<!-- Media Frame -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Avant-garde brutalist digital illustration depicting a neon mythical mud monster rising from Taiwan's muddy Zhuoshui River under dramatic atmospheric lightning. Deep roasted espresso tones, toxic neon amber and crimson highlights, highly textured brush strokes inspired by traditional ink wash fused with cyberpunk concept art." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNkv75l2h040juZN_jingW347N5P9NkvDLrCMzA2tAKYBPmhHlYxJYxNo5KUJc9yXGw5JKeftAF4eJM22fmg8zqSTwagcO7oShqH01iGUliXCmrohTnulpckic13GiuF3FZYBwx50PqH4b2b7ttkGHTkALX1SYrOMdmnOHHB53KMdz3WG5YknO2MgLqi1hJxlAz_g6mLlvQaLn-UKWYEMTarmPuQ5FcqxhWMlIzxEn"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-sm py-1 flex items-center gap-1 shadow-sm">
+<span class="font-label-code text-label-code uppercase text-secondary">LOT 01</span>
+<span class="text-outline-variant font-label-code text-label-code">//</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface">CONCEPT ART</span>
+</div>
+<div class="absolute bottom-space-xs right-space-xs bg-secondary text-on-secondary px-space-xs py-0.5 font-label-caps text-label-caps font-bold">
+          2024
+        </div>
+</div>
+<!-- Spec & Content Section -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-surface-container-high text-secondary px-space-xs py-0.5 font-label-code text-label-code">Illustration</span>
+<span class="bg-surface-container-high text-on-surface-variant px-space-xs py-0.5 font-label-code text-label-code">Procreate</span>
+<span class="bg-surface-container-high text-on-surface-variant px-space-xs py-0.5 font-label-code text-label-code">iPad Pro</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-secondary transition-colors">
+            濁水溪的霓虹怪獸
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            2D 電繪視覺概念圖。融合雲林濁水溪深褐土壤與生猛狂野的台客霓虹，淬鍊出深植土地的荒誕神怪誌。
+          </p>
+</div>
+<!-- Taste/Craft Index Segment -->
+<div class="bg-surface-container-low p-space-sm flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Visual Extraction</span>
+<span class="font-title-md text-title-md text-on-surface">94.8% Saturation</span>
+</div>
+<button class="h-10 px-space-md bg-on-surface text-surface font-label-caps text-label-caps uppercase tracking-wider transition-colors hover:bg-secondary hover:text-on-secondary flex items-center gap-1">
+            Case Study
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: 咖啡因殘留 (Graphic Design) -->
+<article class="project-card flex flex-col bg-surface-container overflow-hidden group shadow-md" data-category="design">
+<!-- Media Frame -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Brutalist indie rock tour visual identity poster on thick textured raw cardboard paper. High-contrast typography in Bodoni Moda and industrial mono spacing, espresso stain rings overlapping bold experimental Chinese lettering, deep dark coffee crema color and vibrant cadmium orange accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRM5AV3-WPAJah9z7DqwUmdRFqZU8dCXTi8gNNgJbfBwRQLnQjkrb6tEv0F3KuYZP-HPriEOF0db38cXGcq7M_nqhBTwYRYedQwR3xn3MDVvmgtBMiuT33ms1dWTi39sc5Z4PrRoYuXY8ezL__-XFFj-fyLXwLIrZHZfKi215ZzJcq9ZE1Sf01pIbTCHP8c7X0Glqw7YNh3K65ODWPZNoqTRfNth2Yxk5oetnGxjjx"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-sm py-1 flex items-center gap-1 shadow-sm">
+<span class="font-label-code text-label-code uppercase text-secondary">LOT 02</span>
+<span class="text-outline-variant font-label-code text-label-code">//</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface">BRANDING</span>
+</div>
+<div class="absolute bottom-space-xs right-space-xs bg-secondary text-on-secondary px-space-xs py-0.5 font-label-caps text-label-caps font-bold">
+          2024
+        </div>
+</div>
+<!-- Spec & Content Section -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-surface-container-high text-secondary px-space-xs py-0.5 font-label-code text-label-code">Graphic Design</span>
+<span class="bg-surface-container-high text-on-surface-variant px-space-xs py-0.5 font-label-code text-label-code">Editorial</span>
+<span class="bg-surface-container-high text-on-surface-variant px-space-xs py-0.5 font-label-code text-label-code">Illustrator</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-secondary transition-colors">
+            咖啡因殘留：獨立樂團巡演主視覺
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            巡演視覺識別與周邊海報系統。以咖啡油脂乾涸後的不規則張力為核心意象，構築高對比狂躁字體編排。
+          </p>
+</div>
+<!-- Taste/Craft Index Segment -->
+<div class="bg-surface-container-low p-space-sm flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Print Format</span>
+<span class="font-title-md text-title-md text-on-surface">Screenprint B1</span>
+</div>
+<button class="h-10 px-space-md bg-on-surface text-surface font-label-caps text-label-caps uppercase tracking-wider transition-colors hover:bg-secondary hover:text-on-secondary flex items-center gap-1">
+            Case Study
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: 野性台北夜行紀實 (Photography) -->
+<article class="project-card flex flex-col bg-surface-container overflow-hidden group shadow-md" data-category="photography">
+<!-- Media Frame -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Cinematic 35mm street photography of Taipei night alleyways in damp rainy weather. Deep chiaroscuro shadows, glowing tungsten noodle cart lanterns and sharp amber headlights casting long reflections on wet asphalt, shot on Leica M vintage lens with heavy film grain and rich espresso shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_by18tfqbV_HAeHVOFNW1Ty65Jrac0kdrjHB5p5xvyCfwbsj1W4-n_If0eMb_en0EnibZe-OuUyvNN8busW0huou2K02u8ZIkQ6o7w8rDrue67TxkdpaiyLfH6hLLZA7jAYkQdkORetJlqrdQaSXyW422JDhUO-m4_rzZ4jvaSWf_GjDZS76ym-x6QCOutpXV_6WV85_9WHpC3_htGoPTAA0ZrV9auEgvsHqjuB6q"/>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-sm py-1 flex items-center gap-1 shadow-sm">
+<span class="font-label-code text-label-code uppercase text-secondary">LOT 03</span>
+<span class="text-outline-variant font-label-code text-label-code">//</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface">35MM ANALOG</span>
+</div>
+<div class="absolute bottom-space-xs right-space-xs bg-secondary text-on-secondary px-space-xs py-0.5 font-label-caps text-label-caps font-bold">
+          2023
+        </div>
+</div>
+<!-- Spec & Content Section -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-surface-container-high text-secondary px-space-xs py-0.5 font-label-code text-label-code">Photography</span>
+<span class="bg-surface-container-high text-on-surface-variant px-space-xs py-0.5 font-label-code text-label-code">Leica</span>
+<span class="bg-surface-container-high text-on-surface-variant px-space-xs py-0.5 font-label-code text-label-code">Lightroom</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-secondary transition-colors">
+            野性台北夜行紀實
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            35mm 街拍紀實調色攝影集。以低照度底片顆粒捕捉暗夜角落的微醺光斑，呈現未經修飾的都會原始呼吸。
+          </p>
+</div>
+<!-- Taste/Craft Index Segment -->
+<div class="bg-surface-container-low p-space-sm flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Aperture / ISO</span>
+<span class="font-title-md text-title-md text-on-surface">f/1.4 · ISO 3200</span>
+</div>
+<button class="h-10 px-space-md bg-on-surface text-surface font-label-caps text-label-caps uppercase tracking-wider transition-colors hover:bg-secondary hover:text-on-secondary flex items-center gap-1">
+            Case Study
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: 超載頻率 Overdrive (Video) -->
+<article class="project-card flex flex-col bg-surface-container overflow-hidden group shadow-md" data-category="video">
+<!-- Media Frame with Video Cue -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Moody cinematic film still from a fast-paced rhythm music video. Rapid glitch cuts, high shutter speed capturing espresso shot spraying under 9 bars of pressure, industrial espresso machine chrome reflection and smoke haze in deep roasted coffee palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdRsDEMcnz0uGlAYH4JE8ffGRY2U_TIbJVXJ2AKM-VuJaenVMMZtJlk9Us1g1f3ZQSvxo4g-2HcBSl8aGQ-zgPrhMcqG8ds339uNs8vyGdHIOSg_ZooL-cxahE-_ozSa361ORqh34fL0y0HZe70yp9hANjYlPCVlNeF94ftshOAKZl5j1n5KaW7GQ4WrtoMOswKou3551ooLI0fs7Xdh9ZXUrof_PBqj-c1mZT9fMC"/>
+<div class="absolute inset-0 bg-surface/30 flex items-center justify-center">
+<div class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-space-xs left-space-xs bg-surface-container-lowest/90 px-space-sm py-1 flex items-center gap-1 shadow-sm">
+<span class="font-label-code text-label-code uppercase text-secondary">LOT 04</span>
+<span class="text-outline-variant font-label-code text-label-code">//</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface">MOTION EDIT</span>
+</div>
+<div class="absolute bottom-space-xs right-space-xs bg-secondary text-on-secondary px-space-xs py-0.5 font-label-caps text-label-caps font-bold">
+          2024
+        </div>
+</div>
+<!-- Spec & Content Section -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-surface-container-high text-secondary px-space-xs py-0.5 font-label-code text-label-code">Video Edit</span>
+<span class="bg-surface-container-high text-on-surface-variant px-space-xs py-0.5 font-label-code text-label-code">Premiere</span>
+<span class="bg-surface-container-high text-on-surface-variant px-space-xs py-0.5 font-label-code text-label-code">After Effects</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-secondary transition-colors">
+            超載頻率 Overdrive
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            動態短片剪輯與節奏調控。以極速抽格與多重疊影表現感官超載的生理震撼，同步客製噪訊取樣音效。
+          </p>
+</div>
+<!-- Taste/Craft Index Segment -->
+<div class="bg-surface-container-low p-space-sm flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Frame Rate</span>
+<span class="font-title-md text-title-md text-on-surface">24fps 4K DCI</span>
+</div>
+<button class="h-10 px-space-md bg-on-surface text-surface font-label-caps text-label-caps uppercase tracking-wider transition-colors hover:bg-secondary hover:text-on-secondary flex items-center gap-1">
+            Case Study
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Interactive Empty State (Hidden initially) -->
+<div class="hidden px-margin-mobile py-space-xl flex-col items-center justify-center text-center" id="empty-state">
+<div class="w-16 h-16 bg-surface-container flex items-center justify-center text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[32px]">filter_none</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">該分類目前醞釀中</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-xs">
+      野孩子正在蒸餾新批次的創作萃取物，請稍候片刻或切換其他分類。
+    </p>
+<button class="mt-space-md h-10 px-space-lg bg-surface-container-high text-secondary font-label-caps text-label-caps uppercase" id="reset-filters">
+      重設篩選條件
+    </button>
+</div>
+<!-- Industrial Extraction Manifesto / Footer Quote -->
+<section class="mt-space-2xl px-margin-mobile">
+<div class="p-space-lg bg-surface-container-low relative overflow-hidden">
+<!-- Decorative Espresso Roast Watermark -->
+<div class="absolute -right-6 -bottom-6 font-display-hero-mobile text-display-hero-mobile text-surface-container select-none pointer-events-none opacity-40">
+        9BAR
+      </div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-4 h-0.5 bg-secondary"></span>
+<span class="font-label-code text-label-code uppercase tracking-widest text-secondary">CREED // 創作哲學</span>
+</div>
+<blockquote class="font-headline-sm text-headline-sm text-on-surface pt-space-xs leading-snug">
+          「每個專案，都是一次無妥協的超高壓萃取。」
+        </blockquote>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+          無論是圖素筆刷的疊加、版面結構的割裂、底片暗部的調控，或是剪輯點的毫秒衝擊——我們以義式濃縮之嚴苛，萃出最野性純粹的精神。
+        </p>
+<!-- Technical QC Readout -->
+<div class="grid grid-cols-3 gap-space-xs mt-space-md pt-space-md bg-surface-container p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">ORIGIN</span>
+<span class="font-title-md text-title-md text-secondary">YUNLIN</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">PRESSURE</span>
+<span class="font-title-md text-title-md text-on-surface">15 BAR</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">ATTITUDE</span>
+<span class="font-title-md text-title-md text-on-surface">100% WILD</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function initWorksScreen() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    const emptyState = document.getElementById('empty-state');
+    const resetBtn = document.getElementById('reset-filters');
+
+    function filterProjects(category) {
+      let visibleCount = 0;
+
+      filterButtons.forEach(btn => {
+        const isActive = btn.getAttribute('data-filter') === category;
+        if (isActive) {
+          btn.classList.remove('bg-surface-container', 'hover:bg-surface-container-high', 'text-on-surface-variant');
+          btn.classList.add('bg-secondary', 'text-on-secondary', 'shadow-sm');
+        } else {
+          btn.classList.remove('bg-secondary', 'text-on-secondary', 'shadow-sm');
+          btn.classList.add('bg-surface-container', 'hover:bg-surface-container-high', 'text-on-surface-variant');
+        }
+      });
+
+      projectCards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        if (category === 'all' || cardCat === category) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.getAttribute('data-filter');
+        filterProjects(cat);
+      });
+    });
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        filterProjects('all');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.4)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-caps text-label-caps uppercase mt-1">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-secondary" data-path="works" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-caps text-label-caps uppercase mt-1">Works</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">local_cafe</span><span class="font-label-caps text-label-caps uppercase mt-1">About</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="audio" href="#"><span class="material-symbols-outlined text-[20px]">graphic_eq</span><span class="font-label-caps text-label-caps uppercase mt-1">Audio</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[20px]">send</span><span class="font-label-caps text-label-caps uppercase mt-1">Contact</span></a></div></nav></body></html>

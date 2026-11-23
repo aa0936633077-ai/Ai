@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-TW"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#131411", "on-tertiary-container": "#e24605", "surface-container-high": "#2a2a27", "surface-tint": "#d2c4bd", "error-container": "#93000a", "surface-container": "#20201d", "on-background": "#e5e2dd", "surface": "#131411", "outline-variant": "#4e4540", "on-error-container": "#ffdad6", "on-error": "#690005", "on-secondary-fixed-variant": "#6d3a00", "secondary": "#ffb77a", "surface-dim": "#131411", "on-tertiary-fixed": "#3a0b00", "on-primary-fixed-variant": "#4f4540", "inverse-primary": "#675c57", "secondary-fixed": "#ffdcc2", "tertiary-container": "#2a0600", "on-secondary-container": "#fcae6a", "inverse-surface": "#e5e2dd", "on-tertiary-fixed-variant": "#852400", "on-secondary": "#4c2700", "outline": "#9a8e89", "secondary-container": "#774001", "secondary-fixed-dim": "#ffb77a", "inverse-on-surface": "#31302d", "surface-container-low": "#1c1c19", "primary-fixed-dim": "#d2c4bd", "tertiary": "#ffb59e", "surface-container-highest": "#353532", "surface-container-lowest": "#0e0e0c", "tertiary-fixed-dim": "#ffb59e", "surface-variant": "#353532", "on-surface": "#e5e2dd", "tertiary-fixed": "#ffdbd0", "on-surface-variant": "#d1c4be", "on-primary-fixed": "#221a16", "on-primary": "#372f2a", "primary": "#d2c4bd", "on-secondary-fixed": "#2e1500", "primary-fixed": "#efdfd8", "error": "#ffb4ab", "surface-bright": "#3a3936", "on-tertiary": "#5e1700", "primary-container": "#18110d", "on-primary-container": "#877b75" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "margin": "2.5rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-2xl": "4rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-3xl": "6rem" }, "fontFamily": { "label-caps": ["Hanken Grotesk"], "body-lg": ["Hanken Grotesk"], "headline-sm": ["Bodoni Moda"], "headline-lg": ["Bodoni Moda"], "title-md": ["Hanken Grotesk"], "headline-md": ["Bodoni Moda"], "title-lg": ["Hanken Grotesk"], "label-code": ["Hanken Grotesk"], "body-md": ["Hanken Grotesk"], "display-hero": ["Bodoni Moda"], "headline-lg-mobile": ["Bodoni Moda"], "display-hero-mobile": ["Bodoni Moda"], "body-sm": ["Hanken Grotesk"] }, "fontSize": { "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.15em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" }], "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-hero": ["84px", { "lineHeight": "88px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-lg-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-hero-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131411;color:#e5e2dd;}body{overscroll-behavior:none;font-family:'Hanken Grotesk',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-secondary selection:text-on-secondary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="5-in-1 Espresso Monogram" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCJVO2mDHTI695XQnoA6d8XcwUq1NmA4m5aN_zDSk05elYbVue8mqBspxEjFBYpq4jVrQ-9s3Q5eAGnIS0NUnJnEsebu1ZDiSYaYCHy151nidf3iavb6gDB3T4oOY7hz8-xgL_BvwK47dPK79mVySC9hjCsWgVJ98pwrcJD_5ZXAjuIAURaSsk30DW0cCQ62ifm7Uc1QdurhnGyEa9dgEIhLe1hAY1zkg9v7Wzq9XwzHg"/><div class="flex flex-col"><span class="font-label-caps text-label-caps uppercase text-on-surface tracking-widest leading-none">WILD ESPRESSO</span><span class="font-label-code text-label-code text-secondary tracking-wider leading-none mt-space-xs">雲林野小孩</span></div></div><div class="flex items-center gap-space-xs"><a class="h-11 px-space-md flex items-center justify-center font-label-caps text-label-caps uppercase bg-primary text-on-primary transition-colors hover:bg-secondary hover:text-on-secondary" data-path="contact" href="#">聯絡</a><button aria-label="開啟選單" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-secondary"><span class="material-symbols-outlined text-[22px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- Editorial Hero & Monogram Spine -->
+<section class="flex flex-col px-margin-mobile pt-space-md pb-space-lg bg-surface">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code text-label-code uppercase tracking-widest text-secondary flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 bg-secondary"></span>
+        LOT 03 // ORIGIN &amp; ROAST ARCHIVE
+      </span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase">REV. 2025.SPEC</span>
+</div>
+<!-- Monumental Typography Headline -->
+<div class="flex flex-col py-space-sm">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tighter uppercase font-serif">
+        STORY &amp; FLAVOR NOTES
+      </span>
+<span class="font-title-md text-title-md text-secondary tracking-wider mt-space-xs">
+        關於我與五合一濃縮風味筆記
+      </span>
+</div>
+<!-- Editorial Accent Ribbon -->
+<div class="grid grid-cols-4 gap-space-xs py-space-sm">
+<div class="h-1 bg-secondary"></div>
+<div class="h-1 bg-surface-container-highest"></div>
+<div class="h-1 bg-surface-container-highest"></div>
+<div class="h-1 bg-secondary"></div>
+</div>
+</section>
+<!-- Narrative Manifesto Section -->
+<section class="flex flex-col px-margin-mobile pb-space-xl">
+<div class="bg-surface-container-low p-space-md flex flex-col gap-space-md shadow-md">
+<!-- Portrait & Origin Snapshot -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="Monochromatic gritty high-fashion editorial portrait of a Taiwanese rural creative designer with windswept hair standing in a sun-baked agricultural field in Yunlin, sharp chiaroscuro lighting, deep espresso and amber film tones, 35mm film grain, avant-garde brutalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-HBXuOCBSjBccH6iL8XTOlAsc9RUn_QrLJd4c2fkpAbQpe7ffQwkII2oIE76liUiluc7y6LhfUH-ctQ3pUsFy2jpFZIHJwIwfpwxXdS4smxHypR13DD2l63u31fhf6c74-exTrkMa9tYf5YLrZeVMCLLiph5niPwbDwHe1SfBeIa3UaUNnZWsf-UXXrgX3-_pKRsvz7eBBr6RZTPEPzLWbxFrDiVmZsprqMipkyk2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex justify-between items-end">
+<div class="bg-secondary-container px-space-sm py-space-xs">
+<span class="font-label-code text-label-code text-secondary font-bold uppercase tracking-wider">YUNLIN TERROIR // 雲林平原</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-lowest/80 px-space-xs py-0.5">23.7092° N, 120.4313° E</span>
+</div>
+</div>
+<!-- Story Copy with Drop Cap Aesthetic -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">local_cafe</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">CREATOR MANIFESTO</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          我是來自雲林平原的野小孩。帶著鄉村泥土的韌性與無拘無束的爆發力，闖入數位創作的世界。
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          拒絕被單一標籤定義，我將繪畫、攝影、剪輯、設計與音樂濃縮為一杯最烈、最純粹的 Espresso。在極致粗獷的原生質地與高訂設計的結構張力間，萃取出不受馴服的視覺新浪潮。
+        </p>
+</div>
+<!-- Quick Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-sm">
+<div class="bg-surface-container p-space-sm flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">PRESSURE</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-serif">9.5 <span class="font-label-code text-label-code text-on-surface-variant">BAR</span></span>
+</div>
+<div class="bg-surface-container p-space-sm flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">EXTRACTION</span>
+<span class="font-headline-sm text-headline-sm text-primary font-serif">1:2 <span class="font-label-code text-label-code text-on-surface-variant">RATIO</span></span>
+</div>
+<div class="bg-surface-container p-space-sm flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">DISCIPLINES</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-serif">5-IN-1</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Divider: 5-in-1 Skillset Title -->
+<section class="px-margin-mobile pb-space-sm flex flex-col">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase bg-primary text-on-primary px-space-xs py-0.5">CORE EXTRACTIONS</span>
+<span class="font-label-code text-label-code text-secondary uppercase tracking-wider">五合一濃縮風味</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline">PULL 01-05</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-serif mt-space-xs">
+      5-in-1 Skillset Profiles
+    </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+      五種核心技藝，如同五層不同的萃取層次，交織成獨特的數位體驗濃縮。
+    </p>
+</section>
+<!-- Tasting Matrix Interactive Bar (Industrial Quality Control Readout) -->
+<section class="px-margin-mobile pb-space-lg">
+<div class="bg-surface-container-high p-space-md flex flex-col gap-space-sm shadow-md">
+<div class="flex justify-between items-center">
+<span class="font-label-code text-label-code uppercase tracking-wider text-secondary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+          TASTING MATRIX INDEX // 萃取光譜
+        </span>
+<span class="font-label-caps text-label-caps text-outline">TOTAL YIELD 100%</span>
+</div>
+<div class="grid grid-cols-5 gap-space-xs pt-space-xs">
+<!-- Metric 1 -->
+<div class="flex flex-col gap-1">
+<div class="h-16 bg-surface-container-lowest flex flex-col justify-end p-0.5">
+<div class="bg-secondary w-full h-[90%]"></div>
+</div>
+<span class="font-label-caps text-[9px] uppercase tracking-tighter text-center text-on-surface-variant">ROAST // 繪畫</span>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col gap-1">
+<div class="h-16 bg-surface-container-lowest flex flex-col justify-end p-0.5">
+<div class="bg-primary w-full h-[85%]"></div>
+</div>
+<span class="font-label-caps text-[9px] uppercase tracking-tighter text-center text-on-surface-variant">ACID // 攝影</span>
+</div>
+<!-- Metric 3 -->
+<div class="flex flex-col gap-1">
+<div class="h-16 bg-surface-container-lowest flex flex-col justify-end p-0.5">
+<div class="bg-secondary w-full h-[95%]"></div>
+</div>
+<span class="font-label-caps text-[9px] uppercase tracking-tighter text-center text-on-surface-variant">CREMA // 剪輯</span>
+</div>
+<!-- Metric 4 -->
+<div class="flex flex-col gap-1">
+<div class="h-16 bg-surface-container-lowest flex flex-col justify-end p-0.5">
+<div class="bg-primary w-full h-[92%]"></div>
+</div>
+<span class="font-label-caps text-[9px] uppercase tracking-tighter text-center text-on-surface-variant">BODY // 設計</span>
+</div>
+<!-- Metric 5 -->
+<div class="flex flex-col gap-1">
+<div class="h-16 bg-surface-container-lowest flex flex-col justify-end p-0.5">
+<div class="bg-secondary w-full h-[88%]"></div>
+</div>
+<span class="font-label-caps text-[9px] uppercase tracking-tighter text-center text-on-surface-variant">FINISH // 音樂</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5-in-1 Cards Stack -->
+<section class="flex flex-col px-margin-mobile gap-space-md pb-space-2xl">
+<!-- Card 1: Illustration -->
+<article class="bg-surface-container-low p-space-md flex flex-col gap-space-sm shadow-md transition-all active:scale-[0.99]">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-secondary font-bold">FLAVOR 01</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">ILLUSTRATION</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary">palette</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">高山焙火：極黑線條與狂放筆觸</h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5 font-medium">Dark Roast Lines &amp; Raw Ink Tension</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        從泥土質感到粗獷黑白墨線，擅長構築兼具概念性與強烈張力的插畫體系。將野性筆觸注入角色設定與動態分鏡中。
+      </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">2D 電繪</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">角色概念設計</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">動態分鏡 (Storyboarding)</span>
+</div>
+<div class="h-28 w-full mt-space-xs relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover opacity-80" data-alt="Editorial close up sketch of wild brutalist ink brush strokes on distressed parchment paper, charcoal deep blacks, dramatic contrast, rustic artistic texture, high fashion concept art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdfkIxgaBk7k4etRPrBFBSo6cAJ3V_0U8LvS2SJkNyOcisbaSVotaPWSrcX7naB7saCMT_IPOjoAGGaHngzGxrxypc52riipKeb-UEQ8Nx7zHbGiYiZ4GcEvi8tY5_tnJSrMCDcNzaypmLna-nkWF4IJzWc4XJzXBY49hRddYjgN5FaQ4IMR9qpA-rvdXGXbjECqukQjydFuvaVMWPZgHJjv0zxevtgqdJLRzX-xuv"/>
+<div class="absolute bottom-2 right-2 bg-surface-container-highest px-space-xs py-0.5">
+<span class="font-label-caps text-label-caps text-secondary">PROFILE: INTENSE</span>
+</div>
+</div>
+</article>
+<!-- Card 2: Photography -->
+<article class="bg-surface-container-low p-space-md flex flex-col gap-space-sm shadow-md transition-all active:scale-[0.99]">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-secondary font-bold">FLAVOR 02</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">PHOTOGRAPHY</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary">photo_camera</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">果香酸度：高對比色調與光影捕捉</h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5 font-medium">Bright Acidity &amp; Hard Sunlight Chiaroscuro</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        如鮮明的高地柑橘果香，運用銳利的硬光與戲劇性深沉陰影，紀錄真實人物的神情與深夜街道的微光流動。
+      </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">高級時裝人像</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">夜間街拍 (Night Street)</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">底片色彩科學調光</span>
+</div>
+<div class="h-28 w-full mt-space-xs relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover opacity-80" data-alt="Editorial night street photography of a glowing neon Taipei alleyway with sharp directional shadows and rich warm amber tones, 35mm film aesthetic, high contrast chiaroscuro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSvMahaymmIKgmGd8FC5MohzGzkA5gWdvUF51QpHhiP22M_vLMM55mKGYV7RNj0rrWts0wZ1ZBFdat1XxNfv2-tpGXhZvTDSSV7SvCrCxJUyV60-rzwNRsZfrq6NX3opSzVEm-GP5x1fB8iku-aefyw3nsNMjM5e0QB1UGCwFseN18o60g3QUTi3l3ZfNIFxtkKBFxJDkTgebKHEQNe48UCtIAdyoBR3SYRt9TDR_0"/>
+<div class="absolute bottom-2 right-2 bg-surface-container-highest px-space-xs py-0.5">
+<span class="font-label-caps text-label-caps text-secondary">PROFILE: CITRIC &amp; CRISP</span>
+</div>
+</div>
+</article>
+<!-- Card 3: Video Editing -->
+<article class="bg-surface-container-low p-space-md flex flex-col gap-space-sm shadow-md transition-all active:scale-[0.99]">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-secondary font-bold">FLAVOR 03</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">VIDEO EDITING</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary">movie</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">濃郁油脂：轉場節奏與節拍重擊</h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5 font-medium">Dense Crema Rhythm &amp; Sub-Bass Cuts</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        如同濃縮表面綿密厚實的 Crema，以極具撞擊感的剪輯節奏掌控觀眾心跳，精準卡點與音效重擊無縫結合。
+      </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">MV 節奏剪輯</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">電影預告前導短片</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">社群動態短影音節奏</span>
+</div>
+<div class="h-28 w-full mt-space-xs relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover opacity-80" data-alt="Abstract dynamic cinematic timeline sequence showing motion blur and rapid frame cuts with warm espresso crema hues, glitch editorial frames, brutalist packaging aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxAmLZ8FFcqkTJ4sdeetSFCzHXKHAsCDO2MkHhLMVN3w8QHNKsjmAF8BfLPZZ_TgdhEj2SMreIUglTGLLJdhEQjRMwKrpmvlf_v6r0lIYjT_kYbL8oB9csVSFmHb1y2MxlDZbi_NZuSod_44VPOjvu0ulR7pFrhk3CL4SpU3DNinKpGXSQLQyCLx6gwswyPxUpm512W2ebqaJCHohDFfVlJhF_0Sy8LbCeVld1HyGi"/>
+<div class="absolute bottom-2 right-2 bg-surface-container-highest px-space-xs py-0.5">
+<span class="font-label-caps text-label-caps text-secondary">PROFILE: VISCOUS &amp; FAST</span>
+</div>
+</div>
+</article>
+<!-- Card 4: Graphic & UI/UX Design -->
+<article class="bg-surface-container-low p-space-md flex flex-col gap-space-sm shadow-md transition-all active:scale-[0.99]">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-secondary font-bold">FLAVOR 04</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">GRAPHIC &amp; UI/UX</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary">layers</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">精準萃取：雜誌感排版與強烈字體</h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5 font-medium">Precision Extraction &amp; Haute-Couture Grid</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        摒棄平庸，以嚴謹的比例架構與極致襯線排版建立品牌權威感。在數位介面中注入高級紙本雜誌的翻閱儀式感。
+      </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">品牌全案識別</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">Behance Editorial 裝幀</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">Web UI / 互動設計</span>
+</div>
+<div class="h-28 w-full mt-space-xs relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover opacity-80" data-alt="Editorial brutalist graphic design portfolio layout showcasing sharp serif Bodoni typography, strict packaging grids, monochrome dark roast color palette with amber highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGT3ugIbmig4LYvENqDrI8Vf5kzZoPRpPwHY0Nnx5IRAbfPqYknTOWYZcdYyH_VHITq5NrFZt6uVz_NfIEWFnXV3KT2ViZoZPE7E_OiCs2RPvg4yAfiyBs1ufoVYlZ62sGF7AX1eEKQXSJJhrm5mpSSBidJ9139hsen3-dcXwfwxuiLh7Dkn5WmfYMxMtY_IPT3LJGwoQDgnotsFLAJvlLHka9KYSMHis-7XZuniUr"/>
+<div class="absolute bottom-2 right-2 bg-surface-container-highest px-space-xs py-0.5">
+<span class="font-label-caps text-label-caps text-secondary">PROFILE: ARCHITECTURAL</span>
+</div>
+</div>
+</article>
+<!-- Card 5: Music Production -->
+<article class="bg-surface-container-low p-space-md flex flex-col gap-space-sm shadow-md transition-all active:scale-[0.99]">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-secondary font-bold">FLAVOR 05</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">MUSIC PRODUCTION</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary">graphic_eq</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">餘韻回甘：低頻震盪與氛圍音效</h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5 font-medium">Lingering Aftertaste &amp; Deep Sub Oscillation</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        如同優質濃縮在舌尖留下的深長焦糖甜感。藉由模擬合成器、Lo-Fi 磁帶底噪與低音重擊，塑造身歷其境的沉浸聽覺場景。
+      </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">Lo-Fi / Synthwave 編曲</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">商業廣告 BGM 配樂</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 bg-surface-container text-on-surface">環境聲音設計 (Foley)</span>
+</div>
+<div class="h-28 w-full mt-space-xs relative overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover opacity-80" data-alt="Close up of a vintage analog synthesizer console in a dim dimly lit studio with amber LED faders glowing, soundwave audio monitoring visualization, cinematic studio atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC02c7uDfHEUWQtjvyIAQaez_T9PtUwBTxHmkxEWeYUglPgNiL7aQugqw8hmigVfEVxd-i_Y48L6jpaIMzK7vV8eONpndlCcOJoggxSz6ZQBCuCpaLhc54kvx5yxDFU3Gvng1zmhw0DOVy9BbOo2ZrnTRSgCznVTqYBPAR5El8sH2fkY8Ps0Gd2iKhKEZRNGkZv0ghLZ-BPMNJ14-H6EKjvgBIRwNnYKPUsEI8GzqH"/>
+<div class="absolute bottom-2 right-2 bg-surface-container-highest px-space-xs py-0.5">
+<span class="font-label-caps text-label-caps text-secondary">PROFILE: AMBIENT &amp; DEEP</span>
+</div>
+</div>
+</article>
+</section>
+<!-- Timeline & Milestones / Editorial Ledger -->
+<section class="flex flex-col px-margin-mobile pb-space-2xl">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code text-label-code text-secondary tracking-widest uppercase flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+        CHRONOLOGY // 歷程與認證
+      </span>
+<span class="font-label-caps text-label-caps text-outline">2021 — PRESENT</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-serif pb-space-md">
+      Milestones &amp; Honors
+    </h2>
+<!-- Editorial Ledger List -->
+<div class="flex flex-col gap-space-xs">
+<!-- Ledger Item 1 -->
+<div class="bg-surface-container-low p-space-md flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-code text-label-code text-secondary font-bold">2024.11</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-space-xs py-0.5 uppercase">AWARD</span>
+</div>
+<div class="font-title-lg text-title-lg text-on-surface">亞洲金點設計獎（Golden Pin Design Award）入圍</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          《雲林野性產地誌》品牌重塑與包裝視覺系統，榮獲視覺傳達設計類別入圍。
+        </p>
+</div>
+<!-- Ledger Item 2 -->
+<div class="bg-surface-container-low p-space-md flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-code text-label-code text-secondary font-bold">2024.06</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-space-xs py-0.5 uppercase">COLLAB</span>
+</div>
+<div class="font-title-lg text-title-lg text-on-surface">獨立音樂廠牌「Raw Pulse」年度視覺總監</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          統籌三張專輯實體黑膠封面裝幀、前導預告剪輯與 5 支官方 Visualizer 影像製作。
+        </p>
+</div>
+<!-- Ledger Item 3 -->
+<div class="bg-surface-container-low p-space-md flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-code text-label-code text-secondary font-bold">2023.09</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-space-xs py-0.5 uppercase">CURATION</span>
+</div>
+<div class="font-title-lg text-title-lg text-on-surface">台北濕地「9.5 BAR 萃取實驗」個人多媒材展</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          結合 2D 狂草電繪、巨幅暗房相片與四聲道合成器氛圍音樂，現場吸引破千位創意人造訪。
+        </p>
+</div>
+<!-- Ledger Item 4 -->
+<div class="bg-surface-container-low p-space-md flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-code text-label-code text-secondary font-bold">2022.04</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-space-xs py-0.5 uppercase">COMMERCIAL</span>
+</div>
+<div class="font-title-lg text-title-lg text-on-surface">國際精品咖啡旗艦店數位互動與 UI 系統建置</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          為跨國精品咖啡品牌打造 iPad Ordering Kiosk 及線上訂購平台，月點閱轉換率提升 34%。
+        </p>
+</div>
+</div>
+</section>
+<!-- Interactive Roast Calculator / Taste Preference Micro-Module -->
+<section class="px-margin-mobile pb-space-2xl">
+<div class="bg-surface-container-high p-space-md flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">coffee_maker</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary">TASTE SELECTOR // 風味偏好探測</span>
+</div>
+<span class="font-label-code text-label-code text-outline">INTERACTIVE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        點擊您專案當前需要的核心元素，即刻調配最合適的五合一濃縮配比：
+      </p>
+<!-- Selector Pills (Interactive) -->
+<div class="grid grid-cols-2 gap-space-xs" id="flavor-selectors">
+<button class="flavor-chip p-space-sm bg-surface-container text-left flex flex-col transition-all active:scale-95 active:bg-secondary-container" data-type="brand" type="button">
+<span class="font-label-code text-label-code text-secondary font-bold">PROFILE A</span>
+<span class="font-title-md text-title-md text-on-surface mt-1">品牌視覺重塑</span>
+<span class="font-label-caps text-[10px] text-outline uppercase mt-0.5">ILLUST + GRAPHIC</span>
+</button>
+<button class="flavor-chip p-space-sm bg-surface-container text-left flex flex-col transition-all active:scale-95 active:bg-secondary-container" data-type="motion" type="button">
+<span class="font-label-code text-label-code text-secondary font-bold">PROFILE B</span>
+<span class="font-title-md text-title-md text-on-surface mt-1">影像節奏轟炸</span>
+<span class="font-label-caps text-[10px] text-outline uppercase mt-0.5">PHOTO + VIDEO + BEAT</span>
+</button>
+<button class="flavor-chip p-space-sm bg-surface-container text-left flex flex-col transition-all active:scale-95 active:bg-secondary-container" data-type="full" type="button">
+<span class="font-label-code text-label-code text-secondary font-bold">PROFILE C</span>
+<span class="font-title-md text-title-md text-on-surface mt-1">五合一全案濃縮</span>
+<span class="font-label-caps text-[10px] text-outline uppercase mt-0.5">ALL 5 DISCIPLINES</span>
+</button>
+<button class="flavor-chip p-space-sm bg-surface-container text-left flex flex-col transition-all active:scale-95 active:bg-secondary-container" data-type="sound" type="button">
+<span class="font-label-code text-label-code text-secondary font-bold">PROFILE D</span>
+<span class="font-title-md text-title-md text-on-surface mt-1">感官聽覺沈浸</span>
+<span class="font-label-caps text-[10px] text-outline uppercase mt-0.5">SOUND + EDITORIAL</span>
+</button>
+</div>
+<!-- Live Feedback Box -->
+<div class="bg-surface-container-lowest p-space-sm flex items-center justify-between" id="flavor-feedback">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-code text-label-code text-secondary" id="feedback-text">已預備萃取：五合一全案濃縮模式</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">READY</span>
+</div>
+</div>
+</section>
+<!-- Resume Download & Contact Call-to-Action Plaque -->
+<section class="px-margin-mobile pb-space-3xl flex flex-col">
+<div class="bg-surface-container-low p-space-lg flex flex-col gap-space-md shadow-xl relative overflow-hidden">
+<!-- Top Decorative Label -->
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">SPECIFICATION SHEET</span>
+<span class="font-label-code text-label-code text-outline">PDF // 14.8 MB</span>
+</div>
+<!-- Headline -->
+<div class="flex flex-col">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-serif">
+          Ready for a Double Shot?
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          無論是全案品牌設計、視覺概念引導或跨界影音協作，隨時歡迎品嚐最濃烈的創意風味。
+        </p>
+</div>
+<!-- Two Primary Action Buttons -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Download CV Button -->
+<a class="h-12 w-full bg-primary text-on-primary font-label-caps text-label-caps uppercase flex items-center justify-center gap-space-xs transition-colors hover:bg-secondary hover:text-on-secondary active:scale-[0.98]" href="#download-cv" id="cv-download-trigger">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>下載完整風味履歷 (DOWNLOAD CV / SPEC)</span>
+</a>
+<!-- Initiate Contact Trigger -->
+<a class="h-12 w-full bg-surface-container-high text-on-surface font-label-caps text-label-caps uppercase flex items-center justify-center gap-space-xs transition-colors hover:bg-secondary-container hover:text-secondary active:scale-[0.98]" data-path="contact" href="#">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>發起專案合作詢問 (CONTACT DIRECT)</span>
+</a>
+</div>
+<!-- Footer Stamp -->
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-code text-[10px] text-outline uppercase tracking-wider">WILD ESPRESSO ARCHIVE</span>
+<span class="font-label-code text-[10px] text-secondary font-mono">HASH: #8F9A-WILD-2025</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function initTasteModule() {
+    const chips = document.querySelectorAll('.flavor-chip');
+    const feedbackText = document.getElementById('feedback-text');
+    const downloadBtn = document.getElementById('cv-download-trigger');
+
+    const flavorDescriptions = {
+      brand: '已預備萃取：極黑線條 × 雜誌級字體重組（品牌識別增強）',
+      motion: '已預備萃取：硬光底片質感 × 重擊重拍（動態影像專屬）',
+      full: '已預備萃取：五合一完整全案濃縮（純粹全能爆發模式）',
+      sound: '已預備萃取：Lo-Fi 空間底噪 × 氛圍視覺（沉浸體驗模式）'
+    };
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => {
+          c.classList.remove('bg-secondary-container');
+          c.classList.add('bg-surface-container');
+        });
+        chip.classList.remove('bg-surface-container');
+        chip.classList.add('bg-secondary-container');
+
+        const profileType = chip.getAttribute('data-type');
+        if (flavorDescriptions[profileType] && feedbackText) {
+          feedbackText.textContent = flavorDescriptions[profileType];
+        }
+      });
+    });
+
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const originalText = downloadBtn.innerHTML;
+        downloadBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[18px] animate-spin">autorenew</span>
+          <span>CREATING SPEC PRINT...</span>
+        `;
+        setTimeout(() => {
+          downloadBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[18px]">check_circle</span>
+            <span>SPECIFICATION COLD-PRESSED (COMPLETE)</span>
+          `;
+          setTimeout(() => {
+            downloadBtn.innerHTML = originalText;
+          }, 2400);
+        }, 900);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.4)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-caps text-label-caps uppercase mt-1">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="works" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-caps text-label-caps uppercase mt-1">Works</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-secondary" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">local_cafe</span><span class="font-label-caps text-label-caps uppercase mt-1">About</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="audio" href="#"><span class="material-symbols-outlined text-[20px]">graphic_eq</span><span class="font-label-caps text-label-caps uppercase mt-1">Audio</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[20px]">send</span><span class="font-label-caps text-label-caps uppercase mt-1">Contact</span></a></div></nav></body></html>

@@ -1,0 +1,117 @@
+export const audioTracks = [
+  {
+    id: 'track-01',
+    trackNum: '01',
+    title: 'Yunlin Midnight Espresso (雲林午夜濃縮)',
+    titleEn: 'Yunlin Midnight Espresso',
+    artist: 'Wild Kid Espresso Lab x Bedroom Studio Session',
+    genre: 'Lo-Fi Beat',
+    bpm: '74 BPM',
+    tempo: 74,
+    key: 'Eb Min',
+    duration: '03:50',
+    durationSec: 230,
+    peakSpectrum: '-6.2 dB VU',
+    notes: '以雲林深夜農地的蟲鳴為基底，結合溫潤的 Rhodes 電鋼琴低音和輕柔破音的大鼓節拍。',
+    coverImage:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDwZ7r3hLikDQNGAO5eIr03hiGdvamBQ2RBryyj0XdKA-k8LB8mkz_3ITbp0wcnIv37Y4uYMG96wpSt4jvdrOfY0HloEcQSefdO330bEV9sDZsIJauA6wCeSZntZTtmJVj66_f3i3JITw_j0avg_f4WSKOZ5q0oZS55RrA-2W1OXkLysMgEPiWJO1xx4hufE-rkSoY5T5N0toZfMVaTvFgAGDsNZ33Ai9IH2OU1jaC-',
+    synthConfig: {
+      type: 'lofi',
+      baseFreq: 155.56, // Eb3
+      chords: [155.56, 185.00, 233.08, 277.18],
+      bassFreq: 77.78,
+    },
+  },
+  {
+    id: 'track-02',
+    trackNum: '02',
+    title: 'Neon Dirt 霓虹泥土',
+    titleEn: 'Neon Dirt',
+    artist: 'Opes Music Production',
+    genre: 'Synthwave',
+    bpm: '128 BPM',
+    tempo: 128,
+    key: 'F Min',
+    duration: '03:42',
+    durationSec: 222,
+    peakSpectrum: '-4.1 dB VU',
+    notes: '強勁的 80 年代類比鋸齒波琶音與高亢 Lead 音色，展現台灣鄉村混搭賽博龐克的衝突感。',
+    coverImage:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDKFfxpBeU36uZRzrJ3mLCGWO9wz48242M7HgmNj6h1pxeCeoCQTzVvgtI-Vanv10piOs3--6PAAvm5pfmcLM4AjwNmOQfhl9J6ibCKonffoo-fjxScZWJDakBqnH32oZc6A4Q2Jo1sp0SyGVQykkhdYVEbKfbH4vh-pO5LJSIhq4RLgbml3EMqN4MjblUulnRfH-BFF2FxbOfXz6yix5SGDF1QrbpV1MzvximGH83L',
+    synthConfig: {
+      type: 'synthwave',
+      baseFreq: 174.61, // F3
+      chords: [174.61, 207.65, 261.63, 311.13],
+      bassFreq: 87.31,
+    },
+  },
+  {
+    id: 'track-03',
+    trackNum: '03',
+    title: 'Double Shot Crema',
+    titleEn: 'Double Shot Crema',
+    artist: 'Wild Kid Espresso Lab',
+    genre: 'Future Bass',
+    bpm: '140 BPM',
+    tempo: 140,
+    key: 'Ab Maj',
+    duration: '02:58',
+    durationSec: 178,
+    peakSpectrum: '-3.8 dB VU',
+    notes: '高壓蒸氣與金屬敲擊採樣融入 Super-saw 和弦，如同 9-bar 活塞衝擊下金黃色 Crema 的噴發。',
+    coverImage:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCZ5PGEzZxU4VlhUwtU8xOEwzrGz-AYX0_H8Gw5HLwxsGckdLMMmip3RB79HQgZr3uHSAWJHYJZ1Y7EbAqU0N6QQxyvdY6kuBhJkcBFDgeyUdQmj0pIOffnRX5JZ3Jx7d8mr7N-OajR-KHqrUTLBXVTg7ShlgyTwKRw566CpYDXERO-qRjhDHJ5SAtqE_cmKGuGLSU7ybPTmnL4eukeyjXUBHTZoNMBIS1S-6Dr8rW9',
+    synthConfig: {
+      type: 'futurebass',
+      baseFreq: 207.65, // Ab3
+      chords: [207.65, 261.63, 311.13, 392.00],
+      bassFreq: 103.83,
+    },
+  },
+  {
+    id: 'track-04',
+    trackNum: '04',
+    title: 'Rain on Banana Leaf 芭蕉雨',
+    titleEn: 'Rain on Banana Leaf',
+    artist: 'Yunlin Field Recording Project',
+    genre: 'Ambient Soundscape',
+    bpm: '85 BPM',
+    tempo: 85,
+    key: 'C Maj',
+    duration: '04:15',
+    durationSec: 255,
+    peakSpectrum: '-9.5 dB VU',
+    notes: '雲林梅雨季實地收音，雨點敲擊厚實芭蕉葉的自然白噪音，搭配緩慢起伏的溫暖氛圍 Pad。',
+    coverImage:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuAVENRifFuVlb-LCp29O4mIwcjjt6mP-K_45dGqPaX1TWmZo0YkBx33pwFBSs3gW2qixjo4TtMHj-t8AJVywtwzUsipMCm54_FLdwRN6loMnGww2gu778J7MPGmH4qkSmsyDfUecc-9U1-mKjTj2yUVMNrxsGzm7dQznImgu1UhK_6uNPYWly56yFklme8swwkHz35knU8O3G-fm3QJDKQW3a_7p4QgUGuO5sriWTwz',
+    synthConfig: {
+      type: 'ambient',
+      baseFreq: 130.81, // C3
+      chords: [130.81, 164.81, 196.00, 246.94],
+      bassFreq: 65.41,
+    },
+  },
+  {
+    id: 'track-05',
+    trackNum: '05',
+    title: 'Wild Kid\'s Anthem 野小孩進行曲',
+    titleEn: 'Wild Kid\'s Anthem',
+    artist: 'Yunlin Street Cypher',
+    genre: 'Hip-Hop Beat',
+    bpm: '92 BPM',
+    tempo: 92,
+    key: 'D Min',
+    duration: '03:10',
+    durationSec: 190,
+    peakSpectrum: '-5.0 dB VU',
+    notes: '經典 MPC-3000 採樣機質感，粗暴的 Boombap 鼓組與黑膠炒豆聲，向街頭與土地致敬。',
+    coverImage:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCGcYSrs1S24GbNZRU7qSJVEJ0qr0CN4CF6XnzfJQ1bl7qoZi9Epa85nT3LSp2E7qHsTvqOAcj34XjY3t9Lg0vVDGD7xs87tpjAIEn-Rp4kkCEJqvLvcHg0CAXYmNnb-ipynYFi3Ge256HDmDSYNuiZeUHZaigGbaSVUSf2fs8GdAjlL4HaEPrkPcD2qxVAI4i-kSX14bSMP68dmuy1EIGTxYW21dAFErWPA9xKdQ2H',
+    synthConfig: {
+      type: 'boombap',
+      baseFreq: 146.83, // D3
+      chords: [146.83, 174.61, 220.00, 261.63],
+      bassFreq: 73.42,
+    },
+  },
+]
